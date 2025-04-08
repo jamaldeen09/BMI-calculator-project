@@ -8,15 +8,19 @@
     <script src="https://kit.fontawesome.com/e689dc126a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <section id="main">
     <header>
-        <h1>BMI CALCULATOR</h1>
+        <h1 class="bmi-cal">BMI CALCULATOR</h1>
     </header>
+    <div class="main">
+
+    </div>
     <div class="gender">
-        <div class="male">
+        <div class="ageButton">
             <span><i class="fa-solid fa-mars"></i></span>
             <h2>MALE</h2>
         </div>
-        <div class="female">
+        <div class=" ageButton">
             <span><i class="fa-solid fa-venus"></i></span>
             <h2>FEMALE</h2>
         </div>
@@ -30,25 +34,46 @@
         </div>
     </div>
     <div class="gender">
-        <div class="weight">
-            <p>weight</p>
-            <h3>71</h3>
-            <div class="weight-btn">
-                <button class="-btn">-</button>
-                <button class="plusbtn">+</button>
+        <div class="ageButton weight">
+            <p id="">weight</p>
+            <h3 id="weightValue">0</h3>
+            <div class="button">
+                <button class="btn" id="weightDecre">-</button>
+                <button class="btn" id="weightIncre">+</button>
             </div>
         </div>
-        <div class="age">
+        <div class="ageButton">
             <p>age</p>
-            <h3>25</h3>
-            <div>
-                <button class="-btn">-</button>
-                <button class="plusbtn">+</button>
+            <h3 id="buttonvalue">25</h3>
+            <div class="button">
+                <button class="btn" id="btnDecre">-</button>
+                <button class="btn" id="btnIncre">+</button>
             </div>
         </div>
     </div>
-    <button class="calbtn">CALCULATE</button>
-    
+    <button class="calbtn" id="calc">CALCULATE</button>
+</section>
+
+
+    <section id="result" class="result">
+        <header id="header" class="result-head">
+            <p><i class="fa-solid fa-angle-left"></i></p>
+           <h2>BMI-RESULT</h2>
+        </header>
+        <h1 class="your-result">Your Result</h1>
+        <div id="output" >
+                <h4 class="normal" id="bmi-result">Normal</h4>
+            <p  id="bmi"><span id="bmiVal">23.7</span></p>
+            <p class="bmi-range">BMI range:</p>
+            <p class="bmi-range" id="bmi-scale" ></p>
+            <p class="bmi-text" id="bmi-text"></p>
+            </div>
+        <div class="calculate RE-CALCULATE" id="recal" >
+            <P> RE-CALCULATE</P>
+           </div>
+       </section>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
 

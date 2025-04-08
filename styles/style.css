@@ -5,9 +5,9 @@
     font-family: "Roboto", sans-serif;
 }
 body{
-    background-color: #040303;
+    
 }
-h1{
+.bmi-cal{
     color: #fff;
     text-align: center;
     padding: 20px 0px;
@@ -16,12 +16,8 @@ h1{
 }
 .gender{
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.gender h2{
-    font-weight: 200;
-    color: #fff;
+    margin: 20px 0px 20px 30px;
+    gap: 100px;
 }
 .male{
     box-sizing: border-box;
@@ -41,6 +37,7 @@ h1{
     background-color: #032453cf;
     border-radius: 10px;
     color: #fff;
+    width: 500px;
     margin: 40px 20px;
     padding: 60px;
     text-align: center;
@@ -57,57 +54,41 @@ h1{
 .height p{
     font-size: 20px;
     color: grey;
-}
-.weight{
+} 
+.ageButton {
     box-sizing: border-box;
     background-color: #032453cf;
     border-radius: 10px;
     color: #fff;
-    margin: 40px 20px;
-    padding: 60px;
+    width: 200px;
+    height: 250px;
+    justify-items: center;
+    align-content:center;
 }
-.weight h3{
+.ageButton h3{
+    margin: 20px 0px 10px 0px;
     font-weight: 600;
     font-size: 50px;
 }
-.weight p{
+.ageButton p{
     font-size: 20px;
     color: grey;
 }
-.age{
-    box-sizing: border-box;
-    background-color: #032453cf;
-    border-radius: 10px;
-    color: #fff;
-    margin: 40px 20px;
-    padding: 60px;
+.button {
+    margin: 5px 0px -30px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
 }
-.age h3{
-    font-weight: 600;
-    font-size: 50px;
-}
-.age p{
-    font-size: 20px;
-    color: grey;
-}
-.-btn{
+.btn{
     background-color: grey;
     color: #fff;
     font-size: 30px;
-    height: 40px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     align-items: center;
     border-radius: 40px;
-}
-.plusbtn{
-    background-color: grey;
-    color: #fff;
-    font-size: 30px;
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    align-items:center;
-    border-radius: 40px;
+    border: none;
 }
 .calbtn{
     background-color: #f01212cf;
@@ -115,7 +96,91 @@ h1{
     color: #fff;
     font-size: 30px;
     font-weight: 600;
+    border: none;
 }
 
+/* result  */
+#result{
+    width: 360px;
+    height: 716px;
+    background-color: RGB(4 4 12);
+    color: white;
+    justify-items: center;
+    position: absolute;
+  }
+  .result-head p{
+   font-size: 20px ;
+   margin-left: 5px;
+  }
+  .your-result{
+    margin: 10px 0px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #output{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 87%;
+    height: 300px;
+    background-color: #0a0e21;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+   .normal{
+    margin-top: 22px;
+  }
+  .RE-CALCULATE{
+    margin-top: 20px;
+  }
+#bmi{
+    font-size: 35px;
+    font-weight: 600;
+    margin:10px 0px 10px 0px;
+}
+.bmi-range{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.bmi-text{
+    margin-top: 10px;
+    font-size: 18px;
 
-
+}
+.your-result{
+    background-color: none !important;
+}
+.calculate{
+    background-color: #FD0225;
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    font-size: 27px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 09px;
+  }
+  .calculate:hover{
+    transition: 0.4s;
+    background-color: #cf1029;
+  }
+  #header{
+    background-color:#0a0e21;
+    padding: 10px 0px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    width: 360px;
+}
+#header h2{
+    margin-left: 20px;
+}
+/* the section id so that i can chaange display */
+#main{
+    background-color: #0a0e21;
+    position: absolute;
+    display: none;
+}
