@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: #040303;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    background-color: rgb(12, 6, 67);
+}
+.gender{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.gender h2{
+    font-weight: 200;
+    color: #fff;
+}
+.male{
+    box-sizing: border-box;
+    background-color: #032453cf;
+    border-radius: 10px;
+    padding: 60px;
+}
+.female{
+    box-sizing: border-box;
+    background-color: #032453cf;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.height{
+    box-sizing: border-box;
+    background-color: #032453cf;
+    border-radius: 10px;
+    color: #fff;
+    margin: 40px 20px;
+    padding: 60px;
+    text-align: center;
+}
+.cm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.height h3{
+    font-weight: 600;
+    font-size: 50px;
+}
+.height p{
+    font-size: 20px;
+    color: grey;
+}
+.weight{
+    box-sizing: border-box;
+    background-color: #032453cf;
+    border-radius: 10px;
+    color: #fff;
+    margin: 40px 20px;
+    padding: 60px;
+}
+.weight h3{
+    font-weight: 600;
+    font-size: 50px;
+}
+.weight p{
+    font-size: 20px;
+    color: grey;
+}
+.age{
+    box-sizing: border-box;
+    background-color: #032453cf;
+    border-radius: 10px;
+    color: #fff;
+    margin: 40px 20px;
+    padding: 60px;
+}
+.age h3{
+    font-weight: 600;
+    font-size: 50px;
+}
+.age p{
+    font-size: 20px;
+    color: grey;
+}
+.-btn{
+    background-color: grey;
+    color: #fff;
+    font-size: 30px;
+    height: 40px;
+    width: 30px;
+    align-items: center;
+    border-radius: 40px;
+}
+.plusbtn{
+    background-color: grey;
+    color: #fff;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items:center;
+    border-radius: 40px;
+}
+.calbtn{
+    background-color: #f01212cf;
+    padding: 40px 200px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
