@@ -326,4 +326,21 @@
 }
 
 
+@media  screen and (max-width: 1280px){
+  
+  .weight button .fa-solid.fa-plus{
+    font-size:2rem;
+    position:relative;
+    bottom:80px;
+    left:40px; 
+  }
+
+  .weight button .fa-solid.fa-minus{
+    font-size:2rem;
+    position:relative;
+    top:20px !important;
+    right:100px;
+  }
+  
+}
 
