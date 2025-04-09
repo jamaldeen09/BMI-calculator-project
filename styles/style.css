@@ -1,121 +1,306 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
     box-sizing: border-box;
+    margin: 0;
     font-family: "Roboto", sans-serif;
-}
-body{
-    background-color: #040303;
-}
-h1{
-    color: #fff;
-    text-align: center;
-    padding: 20px 0px;
-    box-sizing: border-box;
-    background-color: rgb(12, 6, 67);
-}
-.gender{
+  }
+  
+  body {
+    background-color: black;
+    padding-top: 5px;
+  }
+  
+  .heading {
+    background-color: rgb(17, 17, 34);
+    color: white;
+    padding: 30px 150px;
+    height: 100%;
+  }
+  .heading h2 {
+    font-size: 3rem;
+  }
+  
+  .container {
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.gender h2{
-    font-weight: 200;
-    color: #fff;
-}
-.male{
-    box-sizing: border-box;
-    background-color: #032453cf;
-    border-radius: 10px;
-    padding: 60px;
-}
-.female{
-    box-sizing: border-box;
-    background-color: #032453cf;
-    border-radius: 10px;
-    padding: 60px;
-}
-
-.height{
-    box-sizing: border-box;
-    background-color: #032453cf;
-    border-radius: 10px;
-    color: #fff;
-    margin: 40px 20px;
-    padding: 60px;
-    text-align: center;
-}
-.cm{
+    flex-direction: column;
+    gap: 100px;
+  }
+  
+  .male-female {
+    display: flex;
+    gap: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.height h3{
-    font-weight: 600;
-    font-size: 50px;
-}
-.height p{
-    font-size: 20px;
-    color: grey;
-}
-.weight{
-    box-sizing: border-box;
-    background-color: #032453cf;
-    border-radius: 10px;
-    color: #fff;
-    margin: 40px 20px;
-    padding: 60px;
-}
-.weight h3{
-    font-weight: 600;
-    font-size: 50px;
-}
-.weight p{
-    font-size: 20px;
-    color: grey;
-}
-.age{
-    box-sizing: border-box;
-    background-color: #032453cf;
-    border-radius: 10px;
-    color: #fff;
-    margin: 40px 20px;
-    padding: 60px;
-}
-.age h3{
-    font-weight: 600;
-    font-size: 50px;
-}
-.age p{
-    font-size: 20px;
-    color: grey;
-}
-.-btn{
-    background-color: grey;
-    color: #fff;
-    font-size: 30px;
-    height: 40px;
-    width: 30px;
-    align-items: center;
-    border-radius: 40px;
-}
-.plusbtn{
-    background-color: grey;
-    color: #fff;
-    font-size: 30px;
-    height: 40px;
-    width: 40px;
+  }
+  .male-female #btn, .male-female #btn2 {
+    background-color: rgb(33, 33, 67);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 230px 290px;
+    font-size: 3rem;
+    line-height: 1.6;
+  }
+  
+  .container2 {
+    display: flex;
     justify-content: center;
-    align-items:center;
-    border-radius: 40px;
-}
-.calbtn{
-    background-color: #f01212cf;
-    padding: 40px 200px;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-}
+    align-items: center;
+  }
+  
+  .height {
+    padding: 200px 200px;
+    background-color: rgb(33, 33, 67);
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94vw;
+    border-radius: 50px;
+    gap: 20px;
+  }
+  .height h2 {
+    color: white;
+    filter: brightness(80%);
+    font-size: 4rem;
+  }
+  .height label {
+    color: white;
+    font-size: 6rem;
+  }
+  .height label span {
+    filter: brightness(80%);
+    font-size: 3rem;
+  }
+  .height input[type=range] {
+    -webkit-appearance: none; /* removes default styling */
+    width: 120%; /* makes the line longer */
+    height: 8px;
+    background: #ddd; /* fallback for older browsers */
+    border-radius: 3px;
+    margin: 10px 0;
+  }
+  .height input[type=range]::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #fff;
+    border-radius: 3px;
+  }
+  .height input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 80px;
+    width: 80px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -40px; /* centers the thumb on the track */
+  }
+  .height input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background: red;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .height input[type=range]::-moz-range-track {
+    height: 6px;
+    background: #fff;
+    border-radius: 3px;
+  }
+  
+  .weight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 105px;
+  }
+  .weight button {
+    background-color: rgb(33, 33, 67);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 220px 230px;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .weight button #weigh, .weight button #age {
+    filter: brightness(80%);
+    font-size: 2.5rem;
+  }
+  .weight button #plus, .weight button #minus, .weight button #plus2, .weight button #minus2 {
+    background-color: rgb(102, 102, 126);
+    border-radius: 50%;
+    padding: 30px 30px;
+  }
+  .weight button .fa-solid.fa-plus, .weight button .fa-solid.fa-minus {
+    font-size: 3.5rem;
+    width: 7vw;
+    height: 13vh;
+  }
+  .weight button .fa-solid.fa-plus:hover, .weight button .fa-solid.fa-minus:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+  }
+  .weight button .fa-solid.fa-plus {
+    margin-left: 30px;
+  }
+  
+  .calculatebtn {
+    height: 18vh;
+  }
+  .calculatebtn button {
+    background-color: red;
+    border: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .calculatebtn button:hover {
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .heading h2 {
+      font-size: 2.5rem;
+    }
+    .male-female {
+      gap: 20px;
+    }
+    .male-female #btn, .male-female #btn2 {
+      padding: 100px 120px;
+    }
+    .weight {
+      gap: 90px;
+      flex-direction: column;
+    }
+    .weight button {
+      padding: 20px 100px;
+    }
+    .weight .fa-solid.fa-plus, .weight .fa-solid.fa-minus {
+      font-size: 2rem;
+      width: 2vw;
+      min-height: 1vh;
+    }
+    .weight .fa-solid.fa-plus {
+      position: relative;
+      top: 9px;
+      font-size: 4rem !important;
+    }
+    .weight #plus, .weight #minus, .weight #plus2, .weight #minus2 {
+      height: 13vh !important;
+      width: 17vw !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .heading {
+      padding-left: 40px;
+    }
+    .heading h2 {
+      font-size: 1.6rem;
+    }
+    .male-female {
+      flex-direction: column;
+      gap: 60px;
+    }
+    .male-female button {
+      padding: 80px 90px !important;
+    }
+    .height {
+      padding: 80px 80px !important;
+    }
+    .height #lbl {
+      font-size: 2.9rem !important;
+    }
+    .height input[type=range]::-webkit-slider-thumb {
+      height: 50px;
+      width: 50px;
+      margin-top: -24px !important;
+    }
+    .weight button {
+      padding: 50px 50px !important;
+    }
+    .weight .fa-solid.fa-plus {
+      font-size: 3rem !important;
+      position: relative;
+      top: -1px;
+    }
+    .weight .fa-solid.fa-minus {
+      font-size: 3rem !important;
+    }
+    .weight #plus, .weight #minus, .weight #plus2, .weight #minus2 {
+      width: 26vw !important;
+      height: 15vh !important;
+    }
+  }
+  .heading2 {
+    background-color: rgb(17, 17, 34);
+    color: white;
+    padding: 30px 150px;
+    height: 100%;
+    display: none;
+  }
+  .heading2 h2 {
+    font-size: 3rem;
+  }
+  
+  .result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 90px;
+    padding-top: 50px;
+    display: none;
+  }
+  .result .resultbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .result .resultbox #your {
+    font-size: 7rem;
+    color: white;
+    text-align: center;
+  }
+  .result .resultbox .resultinfo {
+    background-color: rgb(33, 33, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+    gap: 40px;
+    border-radius: 50px;
+    width: 70vw;
+    height: 120vh;
+  }
+  .result .resultbox .resultinfo h2 {
+    color: white;
+    font-size: 2rem;
+  }
+  .result .resultbox .resultinfo h1 {
+    color: white;
+    font-size: 8rem;
+  }
+  .result button {
+    background-color: red;
+    border: none;
+    color: white;
+    width: 100vw;
+    height: 20vh;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .result button:hover {
+    cursor: pointer;
+  }
 
 
 

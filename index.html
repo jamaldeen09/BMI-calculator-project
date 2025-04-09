@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/e689dc126a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <h1>BMI CALCULATOR</h1>
-    </header>
-    <div class="gender">
-        <div class="male">
-            <span><i class="fa-solid fa-mars"></i></span>
-            <h2>MALE</h2>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BMI caclulator</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Englebert&family=Loved+by+the+King&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+
+
+         <!-- Heading -->
+         <div class="heading">
+            <h2>BMI CALCULATOR</h2>
+         </div>
+
+        <div class="container">
+            <!-- Male or female -->
+            <div class="male-female">
+               <button id="btn"><i class="fa-solid fa-mars" style="font-size:4rem;" id="icon"></i><h5 id="h5vie">MALE</h5></button>
+               <button id="btn2"><i class="fa-solid fa-venus" style="font-size:4rem;" id="icon2"></i><h5 id="h5vie2">FEMALE</h5></button>
+            </div>
+
+            <div class="container2">
+
+                <!-- Height -->
+                <div class="height">
+                    <h2>Height</h2>
+                    <label for="customRange3" class="form-label" id="lbl">1<span>cm</span></label>
+                    <input type="range" min="100" max="272" id="value">
+                </div>
+
+            </div>
+           
+
+
+            <div class="weight">
+
+                <button id="weightbtn"> <span id="weigh">weight</span><h1 id="val">40</h1> <span> <i class="fa-solid fa-minus"  id="minus"></i></span>  <span><i class="fa-solid fa-plus" id="plus"></i></span> </button>
+                <button id="agebtn"> <span id="age">age</span><h1 id="val2">10</h1> <span> <i class="fa-solid fa-minus"  id="minus2"></i></span>  <span><i class="fa-solid fa-plus" id="plus2"></i></span></button>
+            </div>
+
+            <div class="calculatebtn">
+                <button id="calculate">CALCULATE</button>
+            </div>
+
         </div>
-        <div class="female">
-            <span><i class="fa-solid fa-venus"></i></span>
-            <h2>FEMALE</h2>
+
+        <div class="heading2">
+            <h2>BMI RESULT</h2>
+         </div>
+
+        <div class="result">
+
+            <div class="resultbox">
+
+                <h1 id="your">Your Result</h1>
+
+                <div class="resultinfo">
+
+                    <h2 id="testres">Test</h2>
+                    <h1 id="testnum">23.7</h1>
+
+                    <h2 id="bmirange">poop</h2>
+                    <h2 id="commenting">test</h2>
+                </div>
+            </div>
+
+            <div class="recalculatebtn">
+                <button id="recalculate">RE-CALCULATE YOUR BMI</button>
+            </div>
         </div>
+
         
-    </div>
-    <div class="height">
-        <p>HEIGHT</p>
-        <div class="cm">
-            <h3>173</h3>
-            <p>cm</p>
-        </div>
-    </div>
-    <div class="gender">
-        <div class="weight">
-            <p>weight</p>
-            <h3>71</h3>
-            <div class="weight-btn">
-                <button class="-btn">-</button>
-                <button class="plusbtn">+</button>
-            </div>
-        </div>
-        <div class="age">
-            <p>age</p>
-            <h3>25</h3>
-            <div>
-                <button class="-btn">-</button>
-                <button class="plusbtn">+</button>
-            </div>
-        </div>
-    </div>
-    <button class="calbtn">CALCULATE</button>
-    
-</body>
+        <script src="https://kit.fontawesome.com/f8a2d111bd.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+        <script src="/scripts/main.js"></script>
+    </body>
 </html>
 
 
