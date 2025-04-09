@@ -302,5 +302,28 @@
     cursor: pointer;
   }
 
+@media screen and (max-width: 1024px){
+
+  .male-female #btn, .male-female #btn2{
+    padding: 150px 150px;
+  }
+  .weight button{
+
+    padding: 100px 100px;
+  }
+
+  .weight button .fa-solid.fa-plus{
+    font-size:2rem;
+    position:relative;
+    bottom:19px; 
+  }
+
+  .weight button .fa-solid.fa-minus{
+    font-size:2rem;
+    position:relative;
+    bottom: 20px;
+  }
+}
+
 
 
